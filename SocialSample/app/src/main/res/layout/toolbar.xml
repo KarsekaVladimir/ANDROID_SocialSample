@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    android:id="@+id/Tolbar2"
+    android:layout_width="match_parent"
+    android:background="@color/back_ground"
+    android:layout_height="?actionBarSize"
+    android:contentInsetStart="@dimen/no_indentation">
+
+    <ImageView
+        android:layout_width="@dimen/default_icon_size"
+        android:id="@+id/icon"
+        android:src="@drawable/white_headline"
+        android:layout_height="@dimen/default_icon_size"
+        android:layout_alignLeft="@+id/Tolbar"
+        android:layout_gravity="left"/>
+
+    <ImageButton
+        android:layout_width="@dimen/default_icon_size"
+        android:layout_height="@dimen/default_icon_size"
+        android:src="@drawable/pic3"
+        android:background="@color/back_ground">
+
+    </ImageButton>
+
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/spinerM"
+        android:textSize="@dimen/textsize">
+
+    </Spinner>
+
+    <ImageButton
+        android:layout_width="@dimen/default_icon_size"
+        android:layout_height="@dimen/default_icon_size"
+        android:src="@mipmap/ic_search_white_24dp"
+        android:background="@color/back_ground"
+        android:layout_gravity="right">
+
+    </ImageButton>
+</android.support.v7.widget.Toolbar>
