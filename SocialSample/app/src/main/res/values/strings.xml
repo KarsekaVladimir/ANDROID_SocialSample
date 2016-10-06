@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name"></string>
+    <string name="app_name">SocialSample</string>
     <string name="sheet2"></string>
     <string name="edit_textA">Email or phone number</string>
     <string name="edit_textB">Password</string>

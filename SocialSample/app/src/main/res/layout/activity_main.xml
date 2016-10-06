@@ -60,12 +60,16 @@
         android:gravity="center"
         android:textSize="@dimen/textsize"
         android:background="#6696cc"
-        android:textColor="@color/textcolorT"
+        android:textColor="@color/textcolorT" />
 
-        />
 
-    <Button
 
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
         android:id="@+id/buttonB"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -73,10 +77,8 @@
         android:layout_gravity="bottom"
         android:textSize="@dimen/textsize"
         android:textColor="@color/textcolorT"
-        android:background="#4c75a3"
-        android:layout_marginTop="200sp"
-        />
-
+        android:background="#4c75a3" />
+    </LinearLayout>
 
 </LinearLayout>
 
