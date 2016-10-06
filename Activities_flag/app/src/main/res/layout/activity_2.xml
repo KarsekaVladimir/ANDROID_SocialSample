@@ -10,4 +10,18 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.flag.activities.activities_flag.Activity2">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/View_text2"
+        android:textSize="@dimen/Text_button_size"/>
+    <Button
+        android:id="@+id/But_act_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_text"
+        android:textSize="@dimen/Text_button_size"
+        android:layout_centerInParent="true"
+        android:onClick="to3Activity"/>
+
 </RelativeLayout>

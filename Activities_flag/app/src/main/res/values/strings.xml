@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Activities_flag</string>
+    <string name="button_text">Next Step</string>
+    <string name="View_text1">Second Activity</string>
+    <string name="View_text2">Third Activity</string>
+    <string name="View_text3">fourth Activity</string>
+    <string name="View_text4">fifth Activity</string>
 </resources>
