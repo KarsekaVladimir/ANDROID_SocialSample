@@ -5,27 +5,32 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.Context;
+
 
 
 public class Activity0 extends AppCompatActivity {
 
-    SharedPreferences sPref = null;
-    @Override
+    public static final String APP_PREFERENCES = "settings";
+    public static final String APP_PREFERENCES_IS_WORKFLOW_PASSED = "isWorkflowPassed";
+    private boolean isWorkflowPassed;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        SharedPreferences sp = getSharedPreferences(APP_PREFERENCES, Context.MODE_PRIVATE);
+        isWorkflowPassed = sp.getBoolean(APP_PREFERENCES_IS_WORKFLOW_PASSED, false);
+        start();
+    }
 
-        sPref = getSharedPreferences("lispr.activitye", MODE_PRIVATE);
+    private void start (){
+        Intent intent;
+        if (!isWorkflowPassed) {
+            intent = new Intent(this, Activity1.class);
+        } else {
+            intent = new Intent(this, Activity4.class);
+        }
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
 
-        if(sPref.getBoolean("started", true)){
-            Intent intent = new Intent(this, Activity1.class);
-            startActivity(intent);
-            finish();
-        }
-        else
-        {
-            Intent intent = new Intent(this, Activity4.class);
-            startActivity(intent);
-            finish();
-        }
     }
 }
