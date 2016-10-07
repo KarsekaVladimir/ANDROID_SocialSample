@@ -71,6 +71,7 @@
         android:layout_height="wrap_content"
         android:text="@string/buttonB"
         android:layout_gravity="bottom"
+        android:onClick="toSplashscreen"
         style="?attr/FonGroudButton"/>
         <!--android:textColor="@color/textcolorT"
         android:textSize="@dimen/textsize"-->
