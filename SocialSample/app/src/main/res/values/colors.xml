@@ -11,4 +11,5 @@
     <color name="back_ground">#4c75a3</color>
     <color name="textcolorBlack">#000000</color>
     <color name="BlueButton">#6696cc</color>
+    <color name="TestColor">#CD5C5C</color>
 </resources>

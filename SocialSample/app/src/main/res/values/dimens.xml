@@ -5,5 +5,7 @@
     <dimen name="textsize">7pt</dimen>
     <dimen name="no_indentation">0dp</dimen>
     <dimen name="default_icon_size">24dp</dimen>
+    <dimen name="pic_size_H">90sp</dimen>
+    <dimen name="pic_size_W">90sp</dimen>
 
 </resources>
