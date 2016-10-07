@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/no_indentation"
     android:paddingRight="@dimen/no_indentation"
     android:paddingTop="@dimen/no_indentation"
-    android:background="#ffffff"
+    android:background="@color/colorPrimary"
     android:listSelector="@drawable/list_selector"
     tools:context="com.sample.social.socialsample.Main2Activity">
 
@@ -27,6 +27,7 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin">
+
 
     <ListView
         android:layout_width="match_parent"

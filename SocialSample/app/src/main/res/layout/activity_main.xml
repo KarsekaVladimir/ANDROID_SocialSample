@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:theme="@style/AppTheme"
+    android:theme="@style/BlueButtonTheme"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,7 +11,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@color/back_ground"
     android:orientation="vertical"
-   tools:context="com.sample.social.socialsample.MainActivity">
+    tools:context="com.sample.social.socialsample.MainActivity">
 
     <ImageView
         android:layout_width="90sp"
@@ -20,8 +20,7 @@
         android:layout_gravity="center_horizontal"
         android:adjustViewBounds="false"
         android:id="@+id/ViwLogo"
-        android:layout_marginBottom="20dp"
-        />
+        android:layout_marginBottom="20dp" />
 
       <EditText
 
@@ -30,12 +29,10 @@
         android:layout_height="wrap_content"
         android:hint="@string/edit_textA"
         android:gravity="left"
-        android:textSize="@dimen/textsize"
         android:focusableInTouchMode="true"
-        android:textColorHint="@color/textcolorT"
-        android:layout_gravity="bottom"
-        android:textColor="@color/textcolorT"
-               />
+        android:layout_gravity="bottom"/>
+        <!--android:textColor="@color/textcolorT"
+        android:textSize="@dimen/textsize"-->
 
     <EditText
 
@@ -44,13 +41,12 @@
         android:layout_height="wrap_content"
         android:gravity="left"
         android:hint="@string/edit_textB"
-        android:textSize="@dimen/textsize"
-        android:focusableInTouchMode="false"
-        android:textColorHint="@color/textcolorT"
-        android:textColor="@color/textcolorT"
-        />
+        android:focusableInTouchMode="false"/>
+        <!--android:textColor="@color/textcolorT"
+        android:textSize="@dimen/textsize"-->
 
     <Button
+
         android:layout_below="@+id/edit_textB"
         android:id="@+id/buttonA"
         android:layout_width="match_parent"
@@ -58,10 +54,9 @@
         android:text="@string/buttonA"
         android:layout_gravity="center"
         android:gravity="center"
-        android:textSize="@dimen/textsize"
-        android:background="#6696cc"
-        android:textColor="@color/textcolorT" />
-
+        android:background="@color/BlueButton"/>
+        <!-- android:textColor="@color/textcolorT"
+        android:textSize="@dimen/textsize"-->
 
 
 
@@ -75,9 +70,10 @@
         android:layout_height="wrap_content"
         android:text="@string/buttonB"
         android:layout_gravity="bottom"
-        android:textSize="@dimen/textsize"
-        android:textColor="@color/textcolorT"
-        android:background="#4c75a3" />
+        android:background="#4c75a3"/>
+        <!--android:textColor="@color/textcolorT"
+        android:textSize="@dimen/textsize"-->
+
     </LinearLayout>
 
 </LinearLayout>
