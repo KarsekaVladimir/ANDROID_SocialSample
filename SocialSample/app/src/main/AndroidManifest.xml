@@ -20,10 +20,9 @@
         <activity
             android:name=".Main2Activity"
             android:label="@string/sheet2"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
-        <activity android:name=".Splashscreen">
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".Splashscreen"></activity>
 
-        </activity>
     </application>
 
 </manifest>
