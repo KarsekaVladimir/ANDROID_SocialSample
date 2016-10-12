@@ -6,17 +6,14 @@ import static org.easymock.EasyMock.*;
 public class EasyMockTest {
 
 @Test    public void testSet() {
-        Main2Activity mock = createMock(Main2Activity.class);
+        MusiclistActivity mock = createMock(MusiclistActivity.class);
         NumArray mock1 = createMock(NumArray.class);
         NumArray cl = new NumArray();
-        //Main2Activity cl1 = new Main2Activity();
-        cl.someFunc(mock1);
-        expect(mock1.setNumArray(anyByte(), int n);
+        MusiclistActivity cl1 = new MusiclistActivity();
+        //cl.someFunc(mock1);
+        //expect(mock1.setNumArray(anyByte(), int n);
         replay();
         cl.setNumArray(5);
         verify();
-
-
-
-    }
+        }
 }

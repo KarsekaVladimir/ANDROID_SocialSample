@@ -18,7 +18,7 @@ public class SObjectTest {
     }
 @Test
     public void testArray(){
-        Main2Activity mass = new Main2Activity();
+    MusiclistActivity mass = new MusiclistActivity();
         assertNotNull(mass.names);
         String[] m={"TheBeatles", "Elvis Presley", "The Rolling Stones", "Chuck Berry", "Jimi Hendrix", "James Brown", "Little Richard", "Aretha Franklin", "Ray Charles", "Bob Marley", "The Beach Boys", "Led Zeppelin"};
         assertArrayEquals(mass.names, m);
@@ -26,7 +26,7 @@ public class SObjectTest {
     }
 @Test
     public void testArraysize(){
-        Main2Activity mass = new Main2Activity();
+    MusiclistActivity mass = new MusiclistActivity();
         System.out.println("Expectations size of Array" +mass.size);
         int s=mass.size;
         assertTrue(s==12);

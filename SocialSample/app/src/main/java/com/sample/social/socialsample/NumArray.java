@@ -9,6 +9,7 @@ public class NumArray {
     }
 
     public int getNumArray() {
+
         return Count;
     }
 

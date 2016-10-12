@@ -15,11 +15,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void toMain2Activity (View view){
-        Intent intent = new Intent(this, Main2Activity.class);
-        startActivity(intent);}
+    public void toMusiclistActivity (View view){
+        Intent intent = new Intent(this, MusiclistActivity.class);
+        startActivity(intent);
+    }
 
     public void toSplashscreen (View view){
         Intent intent = new Intent(this, Splashscreen.class);
-        startActivity(intent);}
+        startActivity(intent);
+    }
 }

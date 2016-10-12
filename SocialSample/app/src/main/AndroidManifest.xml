@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Main2Activity"
+            android:name=".MusiclistActivity"
             android:label="@string/sheet2"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity android:name=".Splashscreen"></activity>
