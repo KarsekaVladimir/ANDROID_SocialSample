@@ -23,7 +23,7 @@ android {
         }
     }
 
-    flavorDimensions "countryLoc"
+    flavorDimensions "countryLoc", "Functionality"
 
     productFlavors {
         usa {
@@ -34,6 +34,16 @@ android {
         russia {
             applicationId "com.sample.social.socialsample.russia"
             dimension "countryLoc"
+        }
+
+        beta {
+            applicationId "com.sample.social.socialsample.usa"
+            dimension "Functionality"
+        }
+
+        alpha {
+            applicationId "com.sample.social.socialsample.usa"
+            dimension "Functionality"
         }
     }
 
