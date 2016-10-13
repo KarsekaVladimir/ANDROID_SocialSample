@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Соц сеть</string>
+    <string name="sheet2"></string>
+    <string name="edit_textA">Почта или телефон</string>
+    <string name="edit_textB">Пароль</string>
+    <string name="buttonA">Войти</string>
+    <string name="buttonB">Зарегистрироваться</string>
+    <string-array name="spinerM">
+        <item>Моя музыка</item>
+        <item>Рекомендованное</item>
+        <item>Сохраненное</item>
+    </string-array>
+</resources>

@@ -20,16 +20,13 @@
         android:layout_height="@dimen/default_icon_size"
         android:src="@drawable/pic3"
         android:background="@color/back_ground">
-
     </ImageButton>
-
 
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:entries="@array/spinerM"
         android:textSize="@dimen/textsize">
-
     </Spinner>
 
     <ImageButton
@@ -38,6 +35,6 @@
         android:src="@mipmap/ic_search_white_24dp"
         android:background="@color/back_ground"
         android:layout_gravity="right">
-
     </ImageButton>
+
 </android.support.v7.widget.Toolbar>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <attr name="BluegroudButton" format="reference" />
+   <attr name="FonGroudButton" format="reference" />
+
+</resources>
