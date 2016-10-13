@@ -55,7 +55,7 @@
         android:layout_gravity="center"
         android:gravity="center"
         style="?attr/BluegroudButton"
-        android:onClick="toMain2Activity"/>
+        android:onClick="toMusiclistActivity"/>
         <!-- android:textColor="@color/textcolorT"
         android:textSize="@dimen/textsize"-->
 

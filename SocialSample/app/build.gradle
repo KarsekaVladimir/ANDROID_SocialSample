@@ -16,7 +16,27 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
     }
+
+    flavorDimensions "countryLoc"
+
+    productFlavors {
+        usa {
+            applicationId "com.sample.social.socialsample.usa"
+            dimension "countryLoc"
+        }
+
+        russia {
+            applicationId "com.sample.social.socialsample.russia"
+            dimension "countryLoc"
+        }
+    }
+
 }
 
 dependencies {
@@ -27,5 +47,4 @@ dependencies {
     compile 'com.android.support:appcompat-v7:24.2.1'
     testCompile 'junit:junit:4.12'
     compile 'org.mockito:mockito-core:2.2.0'
-    compile 'org.easymock:easymock:3.4'
 }

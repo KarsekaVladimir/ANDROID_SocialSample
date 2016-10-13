@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SocialSample</string>
+    <string name="sheet2"></string>
+    <string name="edit_textA">Email or phone number</string>
+    <string name="edit_textB">Password</string>
+    <string name="buttonA">Sign in</string>
+    <string name="buttonB">Sign UP</string>
+    <string-array name="spinerM">
+        <item>My Music</item>
+        <item>Recomendation</item>
+        <item>Saved</item>
+    </string-array>
+</resources>
