@@ -47,7 +47,7 @@ android {
             dimension "Functionality"
         }
     }
-    
+
     applicationVariants.all { variant ->
         variant.outputs.each { output ->
             output.outputFile = new File(
