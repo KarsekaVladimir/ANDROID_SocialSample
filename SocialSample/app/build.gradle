@@ -1,6 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+        }
+    }
     compileSdkVersion 24
     buildToolsVersion "24.0.2"
     defaultConfig {
@@ -11,7 +15,6 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
-
     buildTypes {
         release {
             minifyEnabled false
@@ -23,13 +26,12 @@ android {
         debug {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            resValue "string", "name_text", "My App Name Debug" //You can access them in the usual way with @string/app_name or R.string.app_name
+            resValue "string", "name_text", "My App Name Debug"
+            //You can access them in the usual way with @string/app_name or R.string.app_name
             buildConfigField "boolean", "LOG", "false"
         }
     }
-
     flavorDimensions "countryLoc", "Functionality"
-
     productFlavors {
         usa {
             applicationId "com.sample.social.socialsample.usa"
@@ -51,7 +53,6 @@ android {
             dimension "Functionality"
         }
     }
-
     applicationVariants.all { variant ->
         variant.outputs.each { output ->
             output.outputFile = new File(
@@ -68,5 +69,7 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:24.2.1'
     testCompile 'junit:junit:4.12'
-    compile 'org.mockito:mockito-core:2.2.0'
+    testCompile 'org.mockito:mockito-core:1.10.19'
+    //compile 'org.mockito:mockito-core:2.2.0'
+    testCompile 'org.easymock:easymock:3.4'
 }

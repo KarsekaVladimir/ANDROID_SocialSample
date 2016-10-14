@@ -1,6 +1,6 @@
 package com.sample.social.socialsample;
 
-/*import org.easymock.IExpectationSetters;
+import org.easymock.IExpectationSetters;
 import org.junit.Test;
 import static org.easymock.EasyMock.*;
 public class EasyMockTest {
@@ -17,4 +17,3 @@ public class EasyMockTest {
         verify();
         }
 }
-*/
