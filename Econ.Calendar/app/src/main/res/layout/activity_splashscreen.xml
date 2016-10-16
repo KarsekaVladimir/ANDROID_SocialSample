@@ -16,8 +16,8 @@
 
 
     <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:id="@+id/splashpic"
         android:src="@drawable/settings48"
         android:adjustViewBounds="false"
