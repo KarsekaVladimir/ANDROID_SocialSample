@@ -43,13 +43,15 @@ android {
         }
 
         beta {
-            applicationId "com.sample.social.socialsample.usa"
+            applicationId "com.sample.social.socialsample"
             dimension "Functionality"
+            versionName "1.0"
         }
 
         alpha {
-            applicationId "com.sample.social.socialsample.usa"
+            applicationId "com.sample.social.socialsample"
             dimension "Functionality"
+            versionName "1.1"
         }
     }
 
@@ -57,7 +59,7 @@ android {
         variant.outputs.each { output ->
             output.outputFile = new File(
                     output.outputFile.parent,
-                    output.outputFile.name.replace(".apk", "-${variant.versionName}.apk"))
+                    output.outputFile.name.replace(".apk"," ${variant.flavorName} ${variant.versionName}.apk"))
         }
     }
 }
