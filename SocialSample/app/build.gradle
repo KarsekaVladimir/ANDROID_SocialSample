@@ -21,6 +21,7 @@ android {
         debug {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
         }
     }
 
@@ -30,11 +31,15 @@ android {
         usa {
             applicationId "com.sample.social.socialsample.usa"
             dimension "countryLoc"
+            resValue "string", "name", "appForUSA"
+            buildConfigField "int", "count", "12"
         }
 
         russia {
             applicationId "com.sample.social.socialsample.russia"
             dimension "countryLoc"
+            resValue "string", "name", "appForRUS"
+            buildConfigField "int", "count", "15"
         }
 
         beta {

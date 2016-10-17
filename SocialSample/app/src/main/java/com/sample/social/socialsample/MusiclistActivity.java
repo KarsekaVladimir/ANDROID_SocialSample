@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import static com.sample.social.socialsample.BuildConfig.count;
+
 public class MusiclistActivity extends AppCompatActivity {
 
     String[] names = {"TheBeatles", "Elvis Presley", "The Rolling Stones", "Chuck Berry", "Jimi Hendrix", "James Brown", "Little Richard", "Aretha Franklin", "Ray Charles", "Bob Marley", "The Beach Boys", "Led Zeppelin"};
@@ -13,7 +15,7 @@ public class MusiclistActivity extends AppCompatActivity {
     @Override
     protected void onCreate (Bundle savedInstanceState) {
         NumArray numb = new NumArray();
-        numb.setNumArray(12);
+        numb.setNumArray(count);
         int n = numb.getNumArray();
         int [] numMass = new int[n];
         super.onCreate(savedInstanceState);
