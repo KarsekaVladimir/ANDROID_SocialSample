@@ -7,7 +7,7 @@ import static org.mockito.Mockito.*;
 public class MockitoTest {
     @Test
     public void createT(){
-        MusiclistActivity call = mock(MusiclistActivity.class);
+        MusiclistActivityR call = mock(MusiclistActivityR.class);
         int c = call.ret(12);
         System.out.println("="+c);
         call.ret(c);

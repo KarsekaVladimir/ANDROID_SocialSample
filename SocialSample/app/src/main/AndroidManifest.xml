@@ -17,12 +17,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MusiclistActivity"
-            android:label="@string/sheet2"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity android:name=".Splashscreen"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+                  android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
 
     </application>
