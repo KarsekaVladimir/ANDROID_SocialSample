@@ -19,45 +19,46 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            resValue "string", "name_text", "My App Name"
-            buildConfigField "int", "FOO", "52" //You can access them with BuildConfig.FOO
         }
 
         debug {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            resValue "string", "name_text", "My App Name Debug"
-            //You can access them in the usual way with @string/app_name or R.string.app_name
-            buildConfigField "boolean", "LOG", "false"
         }
     }
     flavorDimensions "countryLoc", "Functionality"
     productFlavors {
         usa {
-            applicationId "com.sample.social.socialsample.usa"
+            applicationId ""
             dimension "countryLoc"
+            resValue "string", "name", "appForUSA"
+            buildConfigField "int", "count", "12"
         }
 
         russia {
-            applicationId "com.sample.social.socialsample.russia"
+            applicationId ""
             dimension "countryLoc"
+            resValue "string", "name", "appForRUS"
+            buildConfigField "int", "count", "15"
         }
 
         beta {
-            applicationId "com.sample.social.socialsample.usa"
+            applicationId "socialsample."
             dimension "Functionality"
+            versionName "1.0"
         }
 
         alpha {
-            applicationId "com.sample.social.socialsample.usa"
+            applicationId "socialsample."
             dimension "Functionality"
+            versionName "1.1"
         }
     }
     applicationVariants.all { variant ->
         variant.outputs.each { output ->
             output.outputFile = new File(
                     output.outputFile.parent,
-                    output.outputFile.name.replace(".apk", "-${variant.versionName}.apk"))
+                    output.outputFile.name.replace(".apk"," ${variant.applicationId}${variant.flavorName} ${variant.versionName}.apk"))
         }
     }
 }
