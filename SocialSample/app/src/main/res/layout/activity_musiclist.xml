@@ -11,7 +11,7 @@
     android:paddingTop="@dimen/no_indentation"
     android:background="@color/colorPrimary"
     android:listSelector="@drawable/list_selector"
-    tools:context="com.sample.social.socialsample.MusiclistActivity">
+    tools:context="com.sample.social.socialsample.MusiclistActivityR">
 
 
     <include layout="@layout/toolbar"

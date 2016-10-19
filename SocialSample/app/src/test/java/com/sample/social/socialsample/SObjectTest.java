@@ -1,13 +1,8 @@
 package com.sample.social.socialsample;
 
-import android.widget.Button;
-
 import org.junit.After;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
-import org.junit.internal.runners.statements.Fail;
-import org.junit.Assert.*;
 
 import static org.junit.Assert.*;
 
@@ -18,7 +13,7 @@ public class SObjectTest {
     }
 @Test
     public void testArray(){
-    MusiclistActivity mass = new MusiclistActivity();
+    MusiclistActivityR mass = new MusiclistActivityR();
         assertNotNull(mass.names);
         String[] m={"TheBeatles", "Elvis Presley", "The Rolling Stones", "Chuck Berry", "Jimi Hendrix", "James Brown", "Little Richard", "Aretha Franklin", "Ray Charles", "Bob Marley", "The Beach Boys", "Led Zeppelin"};
         assertArrayEquals(mass.names, m);
@@ -26,7 +21,7 @@ public class SObjectTest {
     }
 @Test
     public void testArraysize(){
-    MusiclistActivity mass = new MusiclistActivity();
+    MusiclistActivityR mass = new MusiclistActivityR();
         System.out.println("Expectations size of Array" +mass.size);
         int s=mass.size;
         assertTrue(s==12);
