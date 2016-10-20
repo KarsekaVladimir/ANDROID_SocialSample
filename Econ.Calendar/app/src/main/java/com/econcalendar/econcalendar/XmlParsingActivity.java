@@ -32,10 +32,10 @@ public class XmlParsingActivity extends Activity {
             XMLReader xmlReader = parser.getXMLReader();
             ParsingClass pc = new ParsingClass();
             xmlReader.setContentHandler(pc);
-            InputStream is = getAssets().open("xmldocument.xml");
+            InputStream is = getAssets().open("xmldocument1.xml");
             xmlReader.parse(new InputSource(is));
-            BindingData bindingData = new BindingData(this, pc.name,
-                    pc.address, pc.qua);
+            BindingData bindingData = new BindingData(this, pc.title,
+                    pc.country, pc.date);
             listView.setAdapter(bindingData);
         } catch (Exception e) {
             e.getMessage();

@@ -14,27 +14,27 @@ import android.widget.TextView;
 //Adapter Class For Binding data to ListView
 public class BindingData extends BaseAdapter {
 
-    ArrayList<String> name;
-    ArrayList<String> address;
-    ArrayList<String> qua;
+    ArrayList<String> title;
+    ArrayList<String> country;
+    ArrayList<String> date;
     LayoutInflater inflater;
 
     public BindingData() {
 
     }
 
-    public BindingData(Activity act, ArrayList<String> name,
-                       ArrayList<String> add, ArrayList<String> qua) {
-        this.name = name;
-        this.address = add;
-        this.qua = qua;
+    public BindingData(Activity act, ArrayList<String> title,
+                       ArrayList<String> country, ArrayList<String> date) {
+        this.title = title;
+        this.country = country;
+        this.date = date;
         inflater = (LayoutInflater) act
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
     @Override
     public int getCount() {
-        return name.size();
+        return title.size();
     }
 
     @Override
@@ -53,25 +53,25 @@ public class BindingData extends BaseAdapter {
         if (convertView == null) {
             holder = new Holder();
             convertView = inflater.inflate(R.layout.listrow, null);
-            holder.txtName = (TextView) convertView.findViewById(R.id.name);
-            holder.txtAddress = (TextView) convertView
-                    .findViewById(R.id.address);
-            holder.txtQua = (TextView) convertView.findViewById(R.id.quali);
+            holder.txtTitle = (TextView) convertView.findViewById(R.id.title);
+            holder.txtCountry = (TextView) convertView
+                    .findViewById(R.id.country);
+            holder.txtDate = (TextView) convertView.findViewById(R.id.date);
             convertView.setTag(holder);
         } else {
             holder = (Holder) convertView.getTag();
         }
-        holder.txtName.setText(Html.fromHtml("" + name.get(position)));
-        holder.txtAddress.setText(Html.fromHtml("<b>Address : </b>"
-                + address.get(position)));
-        holder.txtQua.setText(Html.fromHtml("<b>Qualification : </b>"
-                + qua.get(position)));
+        holder.txtTitle.setText(Html.fromHtml("" + title.get(position)));
+        holder.txtCountry.setText(Html.fromHtml("<b>Country : </b>"
+                + country.get(position)));
+        holder.txtDate.setText(Html.fromHtml("<b>Date : </b>"
+                + date.get(position)));
 
         return convertView;
     }
 
     private class Holder {
 
-        TextView txtName, txtAddress, txtQua;
+        TextView txtTitle, txtCountry, txtDate;
     }
 }
