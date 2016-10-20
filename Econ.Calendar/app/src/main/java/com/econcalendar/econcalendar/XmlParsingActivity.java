@@ -11,7 +11,7 @@ import org.xml.sax.XMLReader;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ListView;
-
+//create core component of parsing and Setting InputStream from assets
 
 public class XmlParsingActivity extends Activity {
     /** Called when the activity is first created. */

@@ -1,5 +1,6 @@
 package com.econcalendar.econcalendar;
 
+import android.content.Intent;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -24,7 +25,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void TakeXML() {
+    //public void GoToParsing() {
+
+       // Intent i = new Intent(getBaseContext(), XmlParsingActivity.class);
+       // startActivity(i);
+    //}
+
+    /* public void TakeXML() {
         try {
             URL url = new URL("http://www.forexfactory.com/ffcal_week_this.xml");
             URLConnection conexion = url.openConnection();
@@ -61,4 +68,5 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
+    */
 }

@@ -6,6 +6,7 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
+//parse data using default handler that is part of Sax Parser. In this class we have three method startElement , endElement , character. These called when tag start , tag end and read its values. We will save these values inside corresponding values
 public class ParsingClass extends DefaultHandler {
 
     ArrayList<String> name = new ArrayList<String>();

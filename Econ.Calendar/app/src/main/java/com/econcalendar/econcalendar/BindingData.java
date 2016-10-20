@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+//Adapter Class For Binding data to ListView
 public class BindingData extends BaseAdapter {
 
     ArrayList<String> name;
