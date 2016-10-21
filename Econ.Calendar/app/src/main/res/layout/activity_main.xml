@@ -9,7 +9,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.econcalendar.econcalendar.MainActivity">
+    tools:context="com.econcalendar.econcalendar.MainActivity"
+    android:orientation="horizontal">
 
     <ListView
         android:layout_width="fill_parent"
@@ -18,4 +19,7 @@
         android:cacheColorHint="@android:color/transparent"
         android:dividerHeight="2dp"
         />
+    <TextView android:id="@+id/content"
+              android:text="Загрузка данных...." android:layout_width="match_parent"
+              android:layout_height="match_parent" />
 </LinearLayout>

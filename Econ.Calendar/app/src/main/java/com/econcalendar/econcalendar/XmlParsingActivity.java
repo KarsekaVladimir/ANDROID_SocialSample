@@ -27,6 +27,7 @@ public class XmlParsingActivity extends Activity {
 
     private void bindDataToListing() {
         try {
+            ProgressFragment pr =new ProgressFragment();
             SAXParserFactory saxparser = SAXParserFactory.newInstance();
             SAXParser parser = saxparser.newSAXParser();
             XMLReader xmlReader = parser.getXMLReader();
