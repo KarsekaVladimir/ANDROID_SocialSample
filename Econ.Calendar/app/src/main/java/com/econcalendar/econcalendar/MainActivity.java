@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+
 import java.io.FileNotFoundException;
 //import java.net.SocketException;
 //import java.net.HttpURLConnection;
@@ -36,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void GoToCalendar(View view){
+
+    }
 
     /*public void TakeXML() {
         try {

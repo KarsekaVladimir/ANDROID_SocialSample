@@ -3,7 +3,7 @@
               android:id="@+id/activity_splashscreen"
               xmlns:tools="http://schemas.android.com/tools"
               android:theme="@style/Theme.AppCompat.NoActionBar"
-              android:orientation="horizontal"
+              android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:paddingBottom="@dimen/no_margin"
@@ -22,7 +22,13 @@
         android:src="@drawable/settings48"
         android:adjustViewBounds="false"
         android:cropToPadding="false"
-        android:layout_gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
         android:layout_weight="0.3"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.1"/>
 
 </LinearLayout>

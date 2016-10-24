@@ -20,7 +20,7 @@ public class XmlParsingActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_calendar);
         listView = (ListView) findViewById(R.id.listview);
         bindDataToListing();
     }
